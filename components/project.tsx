@@ -38,33 +38,32 @@ export default function Project({
     >
       <section className="bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
 
-        <div className="absolute top-2 right-4 flex gap-3 z-10">
-          {appleLink && (
-            <a
-              href={appleLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-black dark:text-white text-xl hover:scale-110 transition"
-              title="Download on Apple"
-            >
-              <FaApple />
-            </a>
-          )}
-          {androidLink && (
-            <a
-              href={androidLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-black dark:text-white text-xl hover:scale-110 transition"
-              title="Download on Android"
-            >
-              <SiGoogleplay />
-            </a>
-          )}
-        </div>
-
         {/* Content */}
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
+          <div className="flex items-center gap-3 mb-3">
+            {appleLink && (
+              <a
+                href={appleLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white text-xl hover:scale-110 transition rounded-md p-1.5 bg-black dark:bg-gray-600"
+                title="Download on Apple"
+              >
+                <FaApple />
+              </a>
+            )}
+            {androidLink && (
+              <a
+                href={androidLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white text-xl hover:scale-110 transition rounded-md p-1.5 bg-black dark:bg-gray-600"
+                title="Download on Android"
+              >
+                <SiGoogleplay />
+              </a>
+            )}
+          </div>
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
             {description}
