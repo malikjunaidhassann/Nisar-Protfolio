@@ -32,7 +32,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src=""
+              src={dp}
               alt="Nisar Ahmad "
               width="222"
               height="222"

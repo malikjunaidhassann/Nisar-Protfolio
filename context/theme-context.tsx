@@ -35,11 +35,13 @@ export default function ThemeContextProvider({ children }: ThemeContextProviderP
 
     if (localTheme) {
       setTheme(localTheme);
-
       if (localTheme === "dark") {
         document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
       }
-    } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    } else {
+      // Default to dark theme when no saved preference exists
       setTheme("dark");
       document.documentElement.classList.add("dark");
     }
