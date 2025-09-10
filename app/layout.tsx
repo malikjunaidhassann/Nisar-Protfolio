@@ -10,9 +10,9 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Muhamad Junaid Hassan | Personal Portfolio",
+  title: "Nisar Ahmad | Personal Portfolio",
   description:
-    "Muhmamad Junaid Hassan is a mern-stack developer with 10 years of experience.",
+    "Nisar Ahmad is a mern-stack developer with 10 years of experience.",
 };
 
 export default function RootLayout({

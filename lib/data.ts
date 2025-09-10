@@ -1,14 +1,12 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { SiFlutter } from "react-icons/si";
 import { LuGraduationCap } from "react-icons/lu";
-import port3 from "@/public/port3.png";
-import port2 from "@/public/port2.png";
-import port1 from "@/public/port1.png";
-import port4 from "@/public/port4.png";
-import port5 from "@/public/port5.png";
-
-export const links = [
+import port3 from "@/public/4.jpg";
+import port2 from "@/public/3.jpg";
+import port1 from "@/public/1.jpg";
+import port4 from "@/public/2.jpg";
+export const links = [ 
   {
     name: "Home",
     hash: "#home",
@@ -38,86 +36,85 @@ export const links = [
 export const experiencesData = [
   {
     title: "Senior Software Engineer",
-    location: "Mobile Kings Silicon Valley",
     description:
-      "Leading client meetings to gather requirements, define project scope, and devise comprehensive work strategies for developing high-performance web applications. Overseeing the design and development of scalable, secure, and user-centric solutions, ensuring timely delivery and client satisfaction. Leveraging advanced web technologies, including HTML, CSS, JavaScript, and frameworks such as React, Angular, and Vue.js, to build sophisticated and responsive applications. Collaborating with cross-functional teams to ensure smooth integration with back-end systems and APIs. Implementing best practices in performance optimization, security, and code quality, while mentoring junior developers and guiding the team in adopting new technologies and methodologies.",
-    icon: React.createElement(FaReact),
+      "I design and develop high-quality iOS and Android apps that deliver seamless user experiences. I lead the architecture and implementation of scalable, efficient mobile solutions while collaborating closely with cross-functional teams. I mentor junior developers, enforce best coding practices, and optimize app performance for reliability and speed. I manage app deployments and continuously integrate new technologies to enhance functionality. My role ensures that mobile applications meet business goals and user needs with robust, maintainable code.",
+    icon: React.createElement(SiFlutter),
     date: "2021 - present",
   },
   {
     title: "Full-Stack Developer",
-    location: "Master IT",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
+      "As a Full-Stack Developer, you will be responsible for architecting, developing, and maintaining robust, scalable web applications across the entire technology stack. Collaborating closely with product managers, designers, and engineering teams, you will deliver seamless, high-performance solutions that meet business objectives. Your expertise in front-end frameworks and back-end technologies will ensure the development of secure, efficient, and maintainable code. You will play an integral role in API design, database management, and continuous integration processes, adhering to best practices in software engineering and agile methodologies. Strong communication skills and a commitment to quality are essential to thrive in this role",
+    icon: React.createElement(SiFlutter),
     date: "January 2018 - February 2021",
   },
   {
-    title: "Full Stack Developer",
-    location: "Ciel Technologies",
+    title: "Software Engineer (Backend + React.js)",
     description:
-      "One of the fundamental concepts I learned was the component-based architecture of React.js. This approach enabled me to break down user interfaces into reusable and manageable pieces, leading to cleaner and more maintainable code",
+      "As a Software Engineer, you will design, build, and maintain scalable backend systems while also contributing to front-end development using React.js. You’ll work across the full software development lifecycle—from architecture and database design to API integration and user interface development. Your backend expertise, combined with modern JavaScript front-end skills, will help deliver robust, high-performance web applications.",
     icon: React.createElement(CgWorkAlt),
     date: "January 2015 - March 2018",
   },
 ] as const;
 
 export const projectsData = [
+ {
+  title: "Alfalah Quran App",
+  description:
+    "Alfalah Quran App is a modern Islamic lifestyle app designed to support Muslims in their daily spiritual journey. It offers features like Azan & prayer time alerts, Qibla direction, Quran with Urdu translation, Islamic calendars, Hadith collections, and more. I contributed to building a user-friendly, feature-rich interface using React Native, ensuring seamless performance across devices and a meaningful user experience for all age groups.",
+  tags: ["React Native", "Flutter", "Firebase", "Islamic Apps"],
+  imageUrl: port1,
+  appleLink: "https://apps.apple.com/us/app/alfalah-quran-athan-prayer/id1631108236", 
+  androidLink: "https://play.google.com/store/apps/details?id=com.appclick.alfalah",
+},
+
   {
-    title: "GlassHive",
+    title: "FamilyTime – The Ultimate Parental Control App",
     description:
-      "In Glasshive, I developed a seamless, interactive frontend that balances aesthetics with performance. Built using React.js, the interface offers a smooth, engaging user experience that simplifies SaaS management, keeping it responsive, visually appealing, and easy to navigate for users at all levels.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind"],
-    imageUrl: port5,
-  },
-  {
-    title: "Stellar Development",
-    description:
-      " For Stellar Development, I crafted a user-friendly and responsive frontend in React.js, focusing on delivering a clean and intuitive design that enhances user interaction. This project seamlessly combines functionality with a polished layout, ensuring users can navigate features effortlessly while enjoying a visually cohesive experience.",
+      "FamilyTime is a smart parental control app that helps parents manage their child’s screen time, monitor digital activity, and ensure their safety online and offline. With powerful features and a user-friendly interface, it supports a healthy digital lifestyle for families.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: port4,
+       appleLink: "https://apps.apple.com/us/app/parental-control-familytime/id981066103", 
+    androidLink: "https://play.google.com/store/apps/details?id=io.familytime.dashboard&hl=en",
   },
   {
-    title: "Podium",
+    title: "Quickwash – Mobile Car Wash Service",
     description:
-      " In building Podium, I developed a sleek, high-performance React.js interface that prioritizes both speed and user engagement. This design balances modern aesthetics with smooth navigation, ensuring users can access features seamlessly while enjoying an interactive and visually appealing experience.",
+      " Bring the shine, right on time.Quickwash delivers high-quality car cleaning to your doorstep—no lines, no waiting, no hassle. Whether you're at home, work, or anywhere in between, our trained professionals come to you with eco-friendly tools and top-tier service.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: port3,
+       appleLink: "https://apps.apple.com/us/app/quickwash-the-mobile-carwash/id6449211789", 
+    androidLink: "https://play.google.com/store/apps/details?id=com.otsapp.live&hl=en",
   },
   {
-    title: "NearPeer",
+    title: "Card Reader & Writer",
     description:
-      "For Nearpeer, I crafted a responsive, React-based frontend focused on fluid user interactions and optimized loading. Designed with a user-centric approach, this interface offers smooth transitions, intuitive navigation, and a visually engaging layout, making it easy for users to connect and interact with the platform’s features effortlessly.",
+      "Smart. Simple. Seamless NFC tools at your fingertips.Unlock the full potential of NFC technology with one easy-to-use app. NFC Tags: Card Reader & Writer lets you read, write, scan, and manage NFC tags effortlessly. Whether you're connecting to Wi-Fi, launching apps, or automating tasks, do it all with a single tap",
     tags: ["React", "Node.js", "MongoDb", "Tailwind", "Redux"],
     imageUrl: port2,
-  },
-  {
-    title: "Pulsetic",
-    description:
-      "For Pulsetic, I developed a sleek and responsive React.js frontend that brings real-time monitoring data to life.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: port1,
+       appleLink: "https://apps.apple.com/us/app/nfc-reader-scanner%E3%85%A4/id6738284544", 
+    androidLink: "https://play.google.com/store/apps/details?id=com.smartwidgetlabs.nfctools&hl=en",
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
+  "Dart",
+  "Flutter",
+  "Android",
+  "IOS",
   "React",
-  "Next.js",
+  "Reat Native",
   "Node.js",
   "Git",
-  "Tailwind",
+  "Express",
   "Prisma",
   "MongoDB",
-  "Redux",
+  "Bloc",
   "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
+  "Firebase",
+  "Push Notifications",
+  "Google SDK",
   "Python",
   "Django",
-  "Framer Motion",
+  "Payment Method",
 ] as const;
